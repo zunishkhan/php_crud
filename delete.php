@@ -3,7 +3,7 @@ include('config.php');
 if(isset($_GET['id']));
 $user_id = $_GET['id'];
  
-$delete = "DELETE FROM 'userdata' WHERE 'user_id' = $user_id";
+$delete = "DELETE FROM `user_data` WHERE `id`= $user_id";
 $result = $conn->query($delete);
 
 if($result == TRUE){
